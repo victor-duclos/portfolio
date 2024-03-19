@@ -1,0 +1,21 @@
+body {
+  width:100%;
+  margin: 0;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content-conteneur{
+  display:flex;
+  width:100%;
+  @media screen and (min-width:300px) and (max-width:620px){
+    flex-direction: column;
+}
+  
+}
+

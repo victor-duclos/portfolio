@@ -1,0 +1,36 @@
+.styleProjets{
+    width:100lh;
+    background-color:#D8E4DF ;
+    h1{
+        color:#324A5E;
+    }
+    @media screen and (min-width:300px) and (max-width:620px){
+        width:100%;
+    }
+}
+.styleProjets h1{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.card-container{
+    display:flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+}
+.groupCard{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin:auto;
+    padding:20px;
+    gap: 90px;
+    
+    @media screen and (min-width:300px) and (max-width:1200px){
+        display:flex;
+        flex-direction: column;
+    }
+}

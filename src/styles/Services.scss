@@ -1,0 +1,124 @@
+.styleContacter{
+    width:100lh;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    }
+    .conteneurContacter{
+      color:white;
+      display:flex;
+      flex-direction:column;
+      height:100vh;
+      background-color: #485158;
+      
+    }
+    .mappingContacter{
+      display:flex;
+      justify-content: space-around;
+    }
+    .bloc10{display:flex;
+      justify-content:center;
+      flex-direction: column;
+      align-items: center;
+      height:100%;
+      gap: 3%;}
+      
+      
+      .bloc10 img{width: 150px;
+      height: 150px;
+      object-fit:cover;
+    cursor:pointer}
+      .bloc10 img:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .bloc20 img{width: 150px;
+        height: 150px;
+        object-fit:cover;
+      cursor:pointer}
+        .bloc20 img:hover{
+          transform: scale(1.1);
+          transition: transform 0.3s ease-in-out;
+        }
+      
+      
+      
+    
+      .texteContacter {
+        position: absolute;
+        top:13.1%;
+        left:30%;
+        
+        width: 50%;
+        height: 50%;
+        
+        
+        
+      }
+    .screen{
+        position:absolute;
+        top:31%;
+        left:25.9%;
+        width:13.6%;
+        height:17.5%
+        
+    }
+    
+    .computerContacter{
+      
+      position: relative;
+      width:100%;
+      height: 100vh;
+      
+    }
+    
+    .laptop{
+      
+      width:100%;
+      height:100%;
+      
+    }
+    .descriptifContacter{
+      position:absolute;
+      
+      color:white;
+      font-size:larger;
+      font-weight: bolder;
+      
+      width:100%;
+      height:100%;
+
+      
+      
+    }
+.styleTexteServices{
+    width:100%;
+    height: 15%;
+    
+    background-color:#E4D9C7;
+    
+    
+    
+}
+.screenTitre{
+  position: absolute;
+  left:10%;
+  top:1%;
+  width:30%;
+  height:10%;
+  display:flex;
+  align-items: center;
+  
+  
+}
+.positionTexteServices{
+  position:absolute;
+  left:29%;
+  top:23%;
+  width:65%;
+  height:40%;
+  
+  background-color: #B6C2AC;
+  
+  
+}
