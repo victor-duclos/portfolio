@@ -1,8 +1,8 @@
 // Import des modules nécessaires
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
-import '../styles/Dashboard.scss'; // Assurez-vous de créer ce fichier CSS pour styliser votre dashboard
-import imageProfil from '../assets/profil.jpg'
+import '../styles/Dashboard.scss'; 
+
 
 // Composant Dashboard
 const Dashboard = () => {
@@ -14,19 +14,19 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-desktop">
-      {/* Image de profil */}
+      
       <img
         className="profile-image"
-        src={imageProfil}
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fprofil1.webp?alt=media&token=20d096c0-7cbc-41bf-9f75-e280223c7dd0"
         alt="profil"
       />
 
-      {/* Texte descriptif */}
+      
       <p className="description-text">
         Bienvenue. Je suis Victor Duclos, développeur web passionné.
       </p>
 
-      {/* Liens pour les services, projets et contact */}
+      
       <div className="dashboard-links">
         <Link to="/" className="link-item">
         <div className="liens-desktop">
@@ -49,13 +49,16 @@ const Dashboard = () => {
         <span>Projets</span>
         </div>
         </Link>
-        <Link to="/me-contacter" className="link-item">
+        
+        <a  className="link-item" href="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2FCV.pdf?alt=media&token=b6b0a95b-57c7-45db-80c4-4a976e1ead8d" download>
         <div className="liens-desktop">
-        <img className="logo-desktop" src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcommunicate.webp?alt=media&token=e9ec07e2-f7cf-43be-9715-c20779c8614f"
-        alt="logoContacter"/>
-        <span>Contacter</span>
+        <img className="logo-desktop" src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcv.webp?alt=media&token=0365c4a7-721e-4eb2-b7b1-5800bf7bfd39"
+        alt="logoCV" />
+        <span>Mon CV</span>
         </div>
-        </Link>  
+        </a>
+        
+         
       </div>
       <div className="lock">
       <Link to="/modifications" className="link-item">
@@ -66,7 +69,7 @@ const Dashboard = () => {
       <div className="dashboard-mobile">
       <img
         className="profile-image"
-        src={imageProfil}
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fprofil1.webp?alt=media&token=20d096c0-7cbc-41bf-9f75-e280223c7dd0"
         alt="profil"
       />
       <p className="description-text">
@@ -102,10 +105,15 @@ const Dashboard = () => {
         <Link to="/mes-projets" className="link-item">Mes projets</Link>
             </div>
             <div className="liens-mobile">
-        <img className="logo-mobile" src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcommunicate.webp?alt=media&token=e9ec07e2-f7cf-43be-9715-c20779c8614f"
-        alt="contact"/>
-        <Link to="/me-contacter" className="link-item">Me contacter</Link>
+            <img className="logo-mobile" src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcv.webp?alt=media&token=0365c4a7-721e-4eb2-b7b1-5800bf7bfd39"
+            alt="logoCV" /> 
+            <a  className="link-item" href="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2FCV.pdf?alt=media&token=b6b0a95b-57c7-45db-80c4-4a976e1ead8d" download>
+            Mon CV</a> 
             </div>
+            
+        
+        
+            
           </div>
         </div>
       )}

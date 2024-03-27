@@ -1,88 +1,52 @@
-.about-conteneur{
-    display: flex;
-    width: 100%;
-    margin-top: 10px;
-    flex-direction:column;
-    align-items: center;
-    h2{
-        color:#324A5E;
-    }
-    @media screen and (min-width:300px) and (max-width:620px){
-        margin-top:0px;
-    }
-}
-.welcome-mobile{
-        @media screen and (min-width:300px) and (max-width:620px){
-                
-                background-color: #728C7B;
-                color:white;
-                padding:20px;
-            }
-        
-}
-
   
-.conteneur-propos{display:flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height:min-content;
-        margin-top:20px;
-        position:relative;
-        z-index: 2;
-        background-color:#C3DDC9;
-        border-radius:20px;
-        padding-top:2%;
-        padding-bottom:2%}
-
-.about-text{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width:100%;
-        height:100%;
-        position:absolute;
-        z-index: 2;
-        
+.conteneur-propos{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-right:20px;
+    margin-left:20px;
 }
+.logo-propos:hover{
+    transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  }
 
-.about-circle{
-        z-index: 1;
-        width:500px;
-        height:500px;
-        background-color: #E2F3FA;
-        border-radius:50% ;
-        position:relative;
-        @media screen and (min-width:300px) and (max-width:370px){
-                width:250px;
-                height:250px;
-            }
-        @media screen and (min-width:370px) and (max-width:620px){
-                width:450px;
-                height:470px;
-            }
-        @media screen and (min-width:620px) and (max-width:780px){
-                width:500px;
-                height:630px;
-            }
-        
+.logo-propos{
+    position:absolute;
+    bottom:340px;
+    width:110px;
+    height:110px;
+    @media screen and (min-width:300px) and (max-width:620px){
+        width:90px;
+        height:90px;
+        bottom:350px;
+    }
+}
+.card-propos{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px;
+    width:450px;
+    height:350px;
+    background-color: #B5BFAA;
+    border:solid #20422D 3px;
+    border-radius:50px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    font-size:18px;
+    @media screen and (min-width:300px) and (max-width:500px){
+        font-size:15px;
+    }
+    @media screen and (min-width:300px) and (max-width:400px){
+        font-size:13px;
+    }
 }
 .paragraphe{
-    text-wrap: wrap;
-    padding-left:1rem;
-    padding-right: 1rem;
-    color:#324A5E;
-    font-size:24px;
-    @media screen and (min-width:370px) and (max-width:620px){
-        font-size:17px;
+    @media screen and (min-width:620px) and (max-width:648px){
+        display:none;
     }
-    @media screen and (min-width:300px) and (max-width:370px){
-        font-size:16px;
-    }
-}
-.text-active{
-        @media screen and (min-width:300px) and (max-width:370px){
-                display:none;
-            }
 }

@@ -1,14 +1,4 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import frontend from '../../assets/frontend1.webp';
-import backend from '../../assets/backend1.webp';
-import optimisation from '../../assets/optimisation.webp';
-import deploiement from '../../assets/deploiement.webp';
-import computer from '../../assets/computer1.jpg';
-
-import browser from '../../assets/browser.png';
-import file from '../../assets/file.png';
-import search from '../../assets/search.png';
-import networking from '../../assets/networking.png';
 import '../../styles/Services.scss';
 
 const Services = () => {
@@ -17,13 +7,18 @@ const Services = () => {
   const [animationIndex, setAnimationIndex] = useState(0);
 
   const servicesData = useMemo(() => [
-    { name: 'Front-end', description: ['Technologies côté client', 'ceci est la deuxième ligne de frontend', 'ceci est la troisième ligne de frontend', 'ceci est la quatrième ligne de frontend'] },
-    { name: 'Back-end', description: ['Technologies côté serveur', 'ceci est la deuxième ligne de backend', 'ceci est la troisième ligne de backend', 'ceci est la quatrième ligne de backend'] },
-    { name: 'Optimisation', description: ['Optimisation des performances', "ceci est la deuxième ligne de d'optimisation", "ceci est la troisième ligne d'optimisation", "ceci est la quatrième ligne d'optimisation"] },
-    { name: 'Déploiement', description: ['Processus de mise en production', 'ceci est la deuxième ligne de déploiement', 'ceci est la troisième ligne de déploiement', 'ceci est la quatrième ligne de déploiement'] },
+    { name: 'Front-end', description: ['Création site vitrine', 'Application web React', 'Interface utilisateur', 'Connexion aux API'] },
+    { name: 'Back-end', description: ["Création d'une API", 'Gestion base de données', 'Protection des données', 'Création base de données'] },
+    { name: 'Optimisation', description: ['Référencement SEO', "Refonte du site", "Allègement du code", "Correction des bugs"] },
+    { name: 'Déploiement', description: ['Production du site', 'Mise à jour du site', 'Suivi après déploiement', 'Maintenance du site'] },
   ], []);
 
   const getBackgroundImage = (index) => {
+    const frontend="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Ffrontend1.webp?alt=media&token=b6e8b2fa-b91e-4abb-b821-97760638ef27";
+    const backend="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fbackend1.webp?alt=media&token=da0531f7-5e92-41a4-abbe-e19326d223f9";
+    const optimisation="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Foptimisation.webp?alt=media&token=1255df81-20ad-477b-a55e-95493a9d36ba";
+    const deploiement="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fdeploiement.webp?alt=media&token=fdcab140-d283-4096-99e7-a4a6fd91350c";
+    
     switch (index) {
       case 0:
         return frontend;
@@ -80,12 +75,63 @@ const Services = () => {
       
       <div className="mappingContacter">
         <div className="conteneurContacter">
+          <div className="titreServices">
           <h2>Mes Services</h2>
-      <p>Veuillez trouver mes services ci-joints.</p>
+      <p>Naviguez entre les icones pour découvrir mes services.</p>
+      <span>En tant que développeur full-stack je vous propose plusieurs solutions en fonctions de vos besoins!</span>
+          </div>
+          <div className="bloc20">
+            <div className="conteneur-bloc20">
+          <img
+              className="image10"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fbrowser.webp?alt=media&token=bea34a00-832f-413f-af9d-a3dba4e3287f"
+              alt="frontend"/>
+              <h2>Front-end</h2>
+              <span>Création site vitrine</span>
+              <span>Application web React</span>
+              <span>Interface utilisateur</span>
+              <span>Connexion aux API</span>
+            </div>
+            <div className="conteneur-bloc20">
+            <img
+              className="image20"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Ffile.webp?alt=media&token=75294ca6-710c-49f9-818f-7265bfcf00f9"
+              alt="backend"/>
+              <h2>Back-end</h2>
+              <span>Création d'une API</span> 
+              <span>Gestion base de données</span> 
+              <span>Protection des données</span> 
+              <span>Création base de données</span>
+              </div>
+          
+            <div className="conteneur-bloc20">
+            <img
+              className="image30"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fsearch.webp?alt=media&token=ba826292-ad6b-4160-b6df-7f62b9d2a93a"
+              alt="optimisation"/>
+              <h2>Optimisation</h2>
+              <span>Référencement SEO</span>
+              <span>Refonte du site</span>
+              <span>Allègement du code</span>
+              <span>Correction des bugs</span>
+            </div>
+
+            <div className="conteneur-bloc20">
+            <img
+              className="image40"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fnetworking.webp?alt=media&token=0c86e20a-3271-47ce-a864-4fb9d03a577b"
+              alt="déploiement"/>
+              <h2>Déploiement</h2>
+              <span>Production du site</span>
+              <span>Mise à jour du site</span>
+              <span>Suivi après déploiement</span>
+              <span>Maintenance du site</span>
+            </div>
+          </div>
          <div className="bloc10">
             <img
               className="image10"
-              src={browser}
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fbrowser.webp?alt=media&token=bea34a00-832f-413f-af9d-a3dba4e3287f"
               alt=""
               onMouseEnter={() => setHoveredIndex(0)}
               onMouseLeave={() => {
@@ -95,7 +141,7 @@ const Services = () => {
             />
             <img
               className="image20"
-              src={file}
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Ffile.webp?alt=media&token=75294ca6-710c-49f9-818f-7265bfcf00f9"
               alt=""
               onMouseEnter={() => setHoveredIndex(1)}
               onMouseLeave={() => {
@@ -107,7 +153,7 @@ const Services = () => {
           
             <img
               className="image30"
-              src={search}
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fsearch.webp?alt=media&token=ba826292-ad6b-4160-b6df-7f62b9d2a93a"
               alt=""
               onMouseEnter={() => setHoveredIndex(2)}
               onMouseLeave={() => {
@@ -117,7 +163,7 @@ const Services = () => {
             />
             <img
               className="image40"
-              src={networking}
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fnetworking.webp?alt=media&token=0c86e20a-3271-47ce-a864-4fb9d03a577b"
               alt=""
               onMouseEnter={() => setHoveredIndex(3)}
               onMouseLeave={() => {
@@ -128,8 +174,8 @@ const Services = () => {
           </div> 
         </div>
         <div className="computerContacter">
-          <img className="laptop" src={computer} alt="" />
-          <img className="screen" src={hoveredIndex !== null ? getBackgroundImage(hoveredIndex) : ''} alt="" />
+          <img className="laptop" src="https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcomputer1.webp?alt=media&token=a142196b-75fc-4327-bcdc-a08de0e01d29" alt="" />
+          <img className="screen" src={hoveredIndex !== null ? getBackgroundImage(hoveredIndex) : "https://firebasestorage.googleapis.com/v0/b/portfolio-ca391.appspot.com/o/divers%2Fcomputer1.webp?alt=media&token=a142196b-75fc-4327-bcdc-a08de0e01d29"} alt="" />
           
           <div className="texteContacter" >
             {hoveredIndex !== null && (

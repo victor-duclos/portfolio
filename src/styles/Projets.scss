@@ -1,8 +1,10 @@
 .styleProjets{
     width:100lh;
-    background-color:#D8E4DF ;
+    background-color:#485158 ;
     h1{
-        color:#324A5E;
+        color:white;
+        margin-left:10px;
+        margin-right:10px;
     }
     @media screen and (min-width:300px) and (max-width:620px){
         width:100%;
@@ -19,6 +21,10 @@
     justify-content: center;
     width: 300px;
     height: 200px;
+    @media screen and (min-width:300px) and (max-width:620px){
+        width:290px;
+        height:190px;
+    }
 }
 .groupCard{
     display:flex;

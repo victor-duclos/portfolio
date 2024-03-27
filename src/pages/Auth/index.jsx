@@ -1,15 +1,16 @@
 import React from 'react';
-import Auth from '../../components/Auth'; // Assurez-vous que le chemin est correct
+import Auth from '../../components/Auth'; 
 import AuthForm from '../../components/AuthForm';
 import AddProjectForm from '../../components/AddProjectForm';
-
+import '../../styles/Auth.scss';
 
 const Authentification = () => {
     return (
       <Auth>
-        {({ user, signIn, signUp, signOut }) => (
-          <div>
+        {({ user, signIn, signOut }) => (
+          <div className="styleAuth">
             {user ? (
+              
               <div>
                 <p>Bienvenue, {user.displayName || user.email}!</p>
                 <button onClick={signOut}>Se déconnecter</button>
@@ -20,14 +21,7 @@ const Authentification = () => {
               </div>
             ) : (
               <div>
-                <p>Veuillez vous connecter</p>
-                
-                {/* Formulaire d'inscription */}
-                <h2>Inscription</h2>
-                <AuthForm onSubmit={signUp} formType="signup" />
-  
-                {/* Formulaire de connexion */}
-                <h2>Connexion</h2>
+                <p>Cette page m'est réservée pour pouvoir ajouter de nouveaux projets ainsi que les modifier.</p>
                 <AuthForm onSubmit={signIn} formType="signin" />
               </div>
             )}

@@ -4,7 +4,7 @@
     width:100%;
     border-radius: 30px;
     background-color: #2A8C70;
-    border: solid #20422D 2px;
+    border: solid #20422D 3px;
     cursor: pointer;
     @media screen and (min-width:300px) and (max-width:460px){
         width:100%;
@@ -26,6 +26,7 @@
     padding-left: 10px;
     padding-right: 10px;
     color:white;
+    p{font-size: 18px;}
     @media screen and (min-width:300px) and (max-width:620px){
         width:100%;
         padding-left: 0px;
@@ -50,7 +51,7 @@
     height:100px;
     border-radius:50%;
     padding:10px;
-    border: solid black 1px;
+    border: solid #20422D 3px;
     background-color:#90DFAA;
     @media screen and (min-width:300px) and (max-width:650px){
         width:80px;

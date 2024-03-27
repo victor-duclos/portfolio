@@ -12,7 +12,7 @@ const AuthForm = ({ onSubmit, formType }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Email:
+        Identifiant:
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
       <label>

@@ -51,7 +51,7 @@ const Projets = () => {
 
   return (
     <div className="styleProjets">
-      <h1>Vous trouverez mes projets diverses et variés ici, </h1>
+      <h1>Vous trouverez mes projets divers et variés ici, </h1>
       <div className="groupCard">
         {projets.map((projet) => (
           <div className="card-container" key={projet.id} onClick={()=> openModal(projet)}>
@@ -70,6 +70,7 @@ const Projets = () => {
           description={selectedProjet.description}
           images={selectedProjet.images}
           code={selectedProjet.code}
+          lien={selectedProjet.lien}
           closeModal={closeModal}
         />
       )}

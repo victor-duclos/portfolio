@@ -3,6 +3,10 @@
     height:100vh;
     background-size: cover;
     background-position: center;
+    @media screen and (min-width:300px) and (max-width:1200px){
+      width:100%;
+      height:100%;
+  }
     }
     .conteneurContacter{
       color:white;
@@ -10,7 +14,33 @@
       flex-direction:column;
       height:100vh;
       background-color: #485158;
-      
+      @media screen and (min-width:904px) and (max-width:1200px){
+        width:100%;
+        padding-bottom:40px;
+       }
+       @media screen and (min-width:300px) and (max-width:904px){
+        height:100%;
+    }
+    }
+    .titreServices{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      padding:20px;
+      p{font-size:18px;}
+      @media screen and (min-width:300px) and (max-width:1200px){
+        align-items: center;
+    }
+      p{
+        @media screen and (min-width:300px) and (max-width:1200px){
+          display:none;
+      }
+      }
+      span{
+        @media screen and (min-width:1200px){
+          display:none;
+      }
+      }
     }
     .mappingContacter{
       display:flex;
@@ -21,28 +51,69 @@
       flex-direction: column;
       align-items: center;
       height:100%;
-      gap: 3%;}
-      
+      gap: 3%;
+      @media screen and (min-width:300px) and (max-width:1200px){
+        display:none;
+    }}
+    
+    .bloc20{
+      display:none;
+      @media screen and (min-width:300px) and (max-width:1200px){
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+        height:100%;
+        gap: 70px;
+        margin-top:30px;
+        padding-bottom:20px;
+        img{width: 100px;
+          height: 100px;
+          object-fit:cover;
+          @media screen and (min-width:300px) and (max-width:400px){
+            width:80px;
+            height:80px;
+        }}
+    }
+    }
+    .conteneur-bloc20{
+      position:relative;
+      background-color:#131F50;
+      border-radius:50px;
+      width:350px;
+      height:250px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        position:absolute;
+        bottom:200px;
+        left:120px;
+        @media screen and (min-width:300px) and (max-width:400px){
+          bottom:140px;
+          left:100px;
+      }
+      }
+      @media screen and (min-width:300px) and (max-width:400px){
+        width:280px;
+        height:180px;
+    }
+    }
       
       .bloc10 img{width: 150px;
       height: 150px;
       object-fit:cover;
-    cursor:pointer}
+      cursor:pointer
+      
+      }
       .bloc10 img:hover{
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out;
+        @media screen and (min-width:300px) and (max-width:1200px){
+          transform:none;
       }
-      .bloc20 img{width: 150px;
-        height: 150px;
-        object-fit:cover;
-      cursor:pointer}
-        .bloc20 img:hover{
-          transform: scale(1.1);
-          transition: transform 0.3s ease-in-out;
-        }
-      
-      
-      
+      }    
     
       .texteContacter {
         position: absolute;
@@ -69,7 +140,9 @@
       position: relative;
       width:100%;
       height: 100vh;
-      
+      @media screen and (min-width:300px) and (max-width:1200px){
+        display:none;
+    }
     }
     
     .laptop{
@@ -104,7 +177,7 @@
   position: absolute;
   left:10%;
   top:1%;
-  width:30%;
+  width:40%;
   height:10%;
   display:flex;
   align-items: center;

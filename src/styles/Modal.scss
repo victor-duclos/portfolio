@@ -2,7 +2,7 @@
 .modal {
     display: block; /* Affiche la modale */
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     left: 0;
     top: 0;
     width: 100%;
@@ -89,7 +89,8 @@
     
   }
   .react1{
-    width:49%;
+    width:352px;
+    height:888px;
     @media screen and (min-width:300px) and (max-width:620px){
       width:100%;
   }
@@ -177,15 +178,36 @@
     display:flex;
     align-items: center;
     color:#324A5E;
-    img{
-      width:250px;
-      height:250px;
-    }
+    
     @media screen and (min-width:300px) and (max-width:620px){
       flex-direction: column;
-      img{
-        width:150px;
-        height:150px;
-      }
+      
   }
   }
+.logoCover{
+  width:250px;
+  height:250px;
+  @media screen and (min-width:300px) and (max-width:620px){
+      width:150px;
+      height:150px;
+    }
+}
+.logoModal{
+  width:30px;
+  height:30px;
+  margin-left:10px;
+}
+.modal-description{
+  display:flex;
+  flex-direction: column;
+  margin-left:10px;
+  p{
+    font-weight: bold;
+  }
+  
+}
+.modal-github{
+  display:flex;
+  align-items: center;
+  font-weight: bold;
+}
